@@ -212,6 +212,16 @@ resource "google_cloud_run_v2_service" "app" {
         }
       }
 
+      env {
+        name = "SECRET_KEY_BASE"
+        value_source {
+          secret_key_ref {
+            secret  = "SECRET_KEY_BASE"
+            version = "latest"
+          }
+        }
+      }
+
       resources {
         limits = {
           cpu    = "1000m"  # 既存の設定に合わせる

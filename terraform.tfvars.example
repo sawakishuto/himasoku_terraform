@@ -1,0 +1,15 @@
+# HimaSoku Terraform 設定例
+# このファイルをコピーして terraform.tfvars を作成してください
+
+# GCP プロジェクト設定
+project_id   = "your-gcp-project-id"
+project_name = "HimaSoku"
+region       = "asia-northeast1"
+
+# Cloud Run 設定
+container_image = "asia-northeast1-docker.pkg.dev/your-project/himasoku/web:latest"
+
+# データベース設定
+database_name     = "himasoku-db"
+database_user     = "postgres"
+database_password = "your-secure-password"  # 強力なパスワードを設定してください

@@ -55,6 +55,11 @@ Thumbs.db
 .env.local
 .env.*.local
 
+# Service account keys (機密情報)
+*-key.json
+service-account-*.json
+terraform-cd-key.json
+
 # Temporary files
 tmp/
 temp/
